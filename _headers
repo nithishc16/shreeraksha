@@ -1,0 +1,12 @@
+/*
+  Content-Security-Policy is intentionally not set here because the site uses
+  Google Fonts, Google Maps and WhatsApp links. Add a stricter CSP only after
+  testing all required third-party resources.
+  
+  Security headers for Netlify.
+*/
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
